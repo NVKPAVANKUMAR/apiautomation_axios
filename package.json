@@ -1,0 +1,28 @@
+{
+  "name": "api_ascendum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --timeout=10000",
+    "test-report": "npx mocha --reporter mocha-allure-reporter",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "core-js": "^3.13.0",
+    "mocha": "^8.4.0",
+    "regenerator-runtime": "^0.13.7",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.14.3",
+    "@babel/register": "^7.13.16",
+    "@babel/preset-env": "^7.3.4"
+  }
+}
